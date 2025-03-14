@@ -1,0 +1,349 @@
+@media (max-width: 480px) {
+
+  .introduction {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .all-itens {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    padding: auto;
+  }
+
+  .img-user {
+    width: 60%;
+    height: auto;
+    max-height: 250px;
+    margin-bottom: 1rem;
+  }
+
+  .user-text {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .user-subtext {
+    font-size: 1.8rem;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .text-alinhamento {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  /* Experiencia */
+  .experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Garante que tudo dentro fique centralizado */
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .align-experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .experience-introduction {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .align-text-experience {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .bussines-text-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .subtext-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-experience {
+    font-size: 1rem;
+  }
+
+  .title-experience {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .bussines-text {
+    font-size: 1.5rem;
+  }
+
+  .subtext-experience,
+  .date-experience {
+    font-size: 1rem;
+  }
+
+  #manual2,
+  #manual,
+  #manual3 {
+    gap: 1rem;
+  }
+
+  /* Habilidades */
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0 5px;
+    max-width: 100%;
+  }
+
+  .align-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .skills-introduction {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .title-skills {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .text-skills {
+    font-size: 1rem;
+  }
+
+  .all-cards-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .all-cards-skills-one,
+  .all-cards-skills-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .icon-skills {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .title-card {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .text-card {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  /* Seção de Projetos */
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+  .card-one-project,
+  .card-two-project,
+  .card-three-project {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .img-project {
+    order: -1;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .project-card .card-text-project {
+    all: unset;
+    width: 80% !important;
+    overflow: hidden !important; /* Esconde o conteúdo excedente */
+  }
+
+  .row-project {
+    display: none; /* Exibe a linha separadora caso queira */
+  }
+
+  .btn-project {
+    width: 90%;
+    max-width: 250px;
+  }
+
+  /* Contato */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .align-contact {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .title-contact {
+    font-size: 2rem;
+  }
+
+  .subtitle-contact {
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+
+  .text-contact {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .rede-one,
+  .rede-two,
+  .rede-three,
+  .rede-four {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    width: 350px;
+  }
+
+  .logo-contact {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .text-rede {
+    font-size: 1.2rem;
+  }
+
+  
+
+  @media (max-width: 768px) {
+    .fade-element {
+      opacity: 1 !important;
+    }
+  }
+}
+
+
+/* Responsividade para telas pequenas */
+@media (max-width: 480px) {
+  .modal-overlay {
+    position: fixed; /* Fixando o overlay na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fundo escurecido */
+    display: flex;
+    justify-content: center; /* Centralizando o modal horizontalmente */
+    align-items: center; /* Centralizando o modal verticalmente */
+  
+  }
+
+  .modal {
+    width: 70%; /* Modal ocupa 90% da largura da tela */
+    max-width: 350px; /* Limita a largura máxima */
+    height: auto; /* Altura ajustável conforme o conteúdo */
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-left: 35px;
+  }
+
+  .modal-video {
+    width: 100%; /* O vídeo ocupa toda a largura */
+    max-height: 40vh; /* Limita a altura do vídeo */
+    border-radius: 10px;
+    object-fit: contain;
+  }
+
+  .close-modal {
+    font-size: 14px;
+    padding: 8px 16px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}
+
+
+
+
+
+

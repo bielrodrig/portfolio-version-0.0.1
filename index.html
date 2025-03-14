@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./portfolio.css" />
+  <link rel="stylesheet" href="./responsividade.css">
+  <title>Portifólio - Gabriel Rodrigues</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-transparent fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Portfólio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Navegação</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resumo">Resumo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Tecnologias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projeto">Projeto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Minhas redes sociais
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item"
+                    href="https://www.linkedin.com/in/gabriel-ferreira-rodrigues-546126287/">LinkedIn</a></li>
+                <li><a class="dropdown-item" href="https://www.instagram.com/bielzxp__/">Instagram</a></li>
+                <li><a class="dropdown-item" href="https://github.com/bielrodrig">GitHub</a></li>
+                <li><a class="dropdown-item" href="#">E-mail</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="introduction">
+    <div class="container">
+      <div class="all-itens">
+        <div class="text-alinhamento">
+          <h1 class="user-text" id="script-title">Olá <br>Me chamo Gabriel</h1>
+        </div>
+        <img src="./images/convencionais/fotoBiel.jpg" class="img-user">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sessão de Experiência -->
+  <section class="experience" id="resumo">
+    <div class="fade-element">
+      <div class="experience-wrapper"> <!-- Novo container para centralizar -->
+        <div class="container">
+          <div class="align-experience">
+            <div class="experience-introduction">
+              <label class="text-experience"
+                style="display: flex; align-items: center; justify-content: center;">EXPERIÊNCIA & EDUCAÇÃO</label>
+              <h1 class="title-experience">Meu Resumo</h1>
+            </div>
+            <br>
+            <br>
+            <div class="align-text-experience">
+              <div>
+                <label class="sub-title-experience">Experiência</label>
+                <hr class="row">
+                <div class="bussines-text-align">
+                  <label class="bussines-text">Nenhuma Experiência</label>
+                  <div class="subtext-container">
+                    <label class="subtext-experience">N/A</label>
+                  </div>
+                </div>
+                <div class="bussines-text-align">
+                  <label class="bussines-text">Nenhuma Experiência</label>
+                  <div class="subtext-container">
+                    <label class="subtext-experience">N/A</label>
+                  </div>
+                </div>
+                <div class="bussines-text-align">
+                  <label class="bussines-text">Nenhuma Experiência</label>
+                  <div class="subtext-container">
+                    <label class="subtext-experience">N/A</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label class="sub-title-experience">Educação</label>
+                <hr class="row">
+                <div class="bussines-text-align">
+                  <label class="bussines-text">SENAI-SP (Curso Técnico)</label>
+                  <div class="subtext-container" id="manual2">
+                    <label class="subtext-experience">Desenvolvimento de Sistemas</label>
+                    <label class="date-experience">2023-2024</label>
+                  </div>
+                </div>
+                <div class="bussines-text-align">
+                  <label class="bussines-text">FSA (Fundação Santo André)</label>
+                  <div class="subtext-container" id="manual">
+                    <label class="subtext-experience">Ciências da Computação</label>
+                    <label class="date-experience">2025-2029</label>
+                  </div>
+                </div>
+                <div class="bussines-text-align">
+                  <label class="bussines-text">SESI-SP</label>
+                  <div class="subtext-container" id="manual3">
+                    <label class="subtext-experience">Ensino Médio</label>
+                    <label class="date-experience">2022-2024</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sessão de Habilidades -->
+  <section class="skills" id="skills">
+    <div class="fade-element">
+      <div class="container">
+        <div class="align-skills">
+          <div class="skills-introduction">
+            <label class="text-skills"
+              style="display: flex; align-items: center; justify-content: center;">TECNOLOGIAS</label>
+            <h1 class="title-skills">Habilidades</h1>
+          </div>
+          <br>
+          <br>
+          <div class="all-cards-skills">
+            <div class="all-cards-skills-one">
+              <div class="card">
+                <img src="./images/convencionais/html.png" class="icon-skills">
+                <br>
+                <label class="title-card">HTML (Intermediário)</label>
+                <br>
+                <p class="text-card">Criação de estruturas semânticas e organizadas, garantindo a base sólida para
+                  páginas
+                  web.</p>
+              </div>
+              <div class="card">
+                <img src="./images/convencionais/css.png" class="icon-skills">
+                <br>
+                <label class="title-card">CSS (Intermediário)</label>
+                <br>
+                <p class="text-card">Desenvolvimento de estilos responsivos e dinâmicos, focando em design visual e
+                  adaptação para diferentes dispositivos.</p>
+              </div>
+              <div class="card">
+                <img src="./images/convencionais/js.png" class="icon-skills" style="border-radius: 5px;">
+                <br>
+                <label class="title-card">JavaScript (Intermediário)</label>
+                <br>
+                <p class="text-card">Implementação de funcionalidades interativas e dinâmicas, melhorando a experiência
+                  do
+                  usuário.</p>
+              </div>
+            </div>
+            <div class="all-cards-skills-two">
+              <div class="card">
+                <img src="./images/convencionais/database.png" class="icon-skills">
+                <br>
+                <label class="title-card">MySQL e Firebase (Básico)</label>
+                <br>
+                <p class="text-card">Gerenciamento de bancos de dados, implementando soluções básicas e intermediárias
+                  para armazenamento e recuperação de informações.</p>
+              </div>
+              <div class="card">
+                <img src="./images/convencionais/react.png" class="icon-skills">
+                <br>
+                <label class="title-card">React e React Native (Intermediário)</label>
+                <br>
+                <p class="text-card">Criação de aplicações modernas para web e mobile, com foco em performance e design
+                  intuitivo.</p>
+              </div>
+              <div class="card">
+                <img src="./images/convencionais/php.png" class="icon-skills">
+                <br>
+                <label class="title-card">PHP (Básico)</label>
+                <br>
+                <p class="text-card">Desenvolvimento de back-end funcional, com integração a bancos de dados e lógica de
+                  negócios eficiente.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sessão de Projetos -->
+  <section class="projects" id="projeto">
+    <div class="fade-element">
+      <div class="container">
+        <div class="align-project">
+          <div class="project-introduction">
+            <label class="text-skills"
+              style="display: flex; align-items: center; justify-content: center;">PRÁTICAS</label>
+            <h1 class="title-skills">Meus Projetos</h1>
+          </div>
+          <br>
+          <br>
+          <div class="project-card">
+            <div class="card-one-project" data-video="videos/teste -.mp4">
+              <img src="./images/convencionais/fotoTeste.png" class="img-project">
+              <div class="card-text-project">
+                <label class="card-title-project"><label style="color: white;">Sobre o Projeto:</label> Lorem ipsum
+                  dolor
+                  sit amet consectetur adipisicing elit. Dignissimos enim labore quos molestias aut? Nesciunt autem
+                  earum
+                  cum tenetur</label>
+                <br>
+                <br>
+                <br>
+                <hr class="row-project">
+                <br>
+                <br>
+                <label class="card-title-project"><label style="color: white;">Técnologias:</label><br> MySQL
+                  (Manipulação
+                  dos
+                  dados), HTML, CSS, PHP</label>
+              </div>
+            </div>
+            <br>
+            <div class="card-two-project">
+              <div class="card-text-project">
+                <label class="card-title-project"><label style="color: white;">Sobre o Projeto:</label> Lorem ipsum
+                  dolor
+                  sit amet consectetur adipisicing elit. Dignissimos enim labore quos molestias aut? Nesciunt autem
+                  earum
+                  cum tenetur</label>
+                <br>
+                <br>
+                <br>
+                <hr class="row-project">
+                <br>
+                <br>
+                <label class="card-title-project"><label style="color: white;">Técnologias:</label> MySQL (Manipulação
+                  dos
+                  dados), HTML, CSS, PHP</label>
+              </div>
+              <img src="./images/convencionais/fotoTeste.png" class="img-project">
+            </div>
+            <br>
+            <div class="card-three-project">
+              <img src="./images/convencionais/fotoTeste.png" class="img-project">
+              <div class="card-text-project">
+                <label class="card-title-project"><label style="color: white;">Sobre o Projeto:</label> Lorem ipsum
+                  dolor
+                  sit amet consectetur adipisicing elit. Dignissimos enim labore quos molestias aut? Nesciunt autem
+                  earum
+                  cum tenetur quisquam!</label>
+                <br>
+                <br>
+                <br>
+                <hr class="row-project">
+                <br>
+                <br>
+                <label class="card-title-project"><label style="color: white;">Técnologias:</label> MySQL (Manipulação
+                  dos
+                  dados), HTML, CSS, PHP</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-project">Veja mais projetos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sessão de contato -->
+  <section class="contact">
+    <div class="fade-element">
+      <div class="align-contact">
+        <label class="title-contact">Contato</label>
+        <h1 class="subtitle-contact">Gostou do meu conteúdo?</h1>
+        <label class="text-contact">Entre em contato ou verifique meu currículo!</label>
+        <br>
+        <a href="https://www.linkedin.com/in/gabriel-ferreira-rodrigues-546126287/" style="text-decoration: none;">
+          <div class="rede-one">
+            <img src="./images/convencionais/mdi--linkedin.png" class="logo-contact">
+            <label class="text-rede">LinkedIn</label>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/bielzxp__/" style="text-decoration: none;">
+          <div class="rede-two">
+            <img src="./images/convencionais/hugeicons--instagram.png" class="logo-contact">
+            <label class="text-rede">Instagram</label>
+          </div>
+        </a>
+        <a href="https://github.com/bielrodrig" style="text-decoration: none;">
+          <div class="rede-three">
+            <img src="./images/convencionais/mdi--github.png" class="logo-contact">
+            <label class="text-rede">GitHub</label>
+          </div>
+        </a>
+        <a id="dowload" href="arquivo/Curriculo Gabriel Rodrigues.pdf" download="Curriculo Gabriel Rodrigues.pdf"
+          type="application/pdf" style="text-decoration: none;">
+          <div class="rede-four">
+            <img src="./images/convencionais/dowload.png" class="logo-contact">
+            <label class="text-rede">Baixar ou Visualizar Currículo </label>
+          </div>
+      </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <label>&copy; 2025 Todos os direitos reservados</label>
+  </footer>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="script/portfolio.js"></script>
+  <script src="script/dowload.js"></script>
+  <script src="script/modal.js"></script>
+</body>
+
+</html>
