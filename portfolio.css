@@ -387,18 +387,18 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(50px); /* Inicia fora de vista */
+    transform: translateY(50px); 
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* Finaliza na posição original */
+    transform: translateY(0); 
   }
 }
 
-/* Classe que será adicionada ao elemento quando ele aparecer */
+
 .fade-element {
   opacity: 0;
-  transition: opacity 0.6s ease-out; /* Transição suave de opacidade */
+  transition: opacity 0.6s ease-out; 
 }
 .fade-in {
   opacity: 1;
@@ -411,11 +411,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Escurece o fundo */
-  backdrop-filter: blur(8px); /* Aplica o desfoque */
+  background: rgba(0, 0, 0, 0.7); 
+  backdrop-filter: blur(8px); 
   display: flex;
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; 
+  justify-content: center; 
   z-index: 1000;
   opacity: 0;
   pointer-events: none;
@@ -426,8 +426,8 @@
   background: #222;
   color: white;
   padding: 20px;
-  width: 50%; /* Largura do modal */
-  max-width: 600px; /* Largura máxima */
+  width: 50%; 
+  max-width: 600px;
   border-radius: 10px;
   height: 80%;
   text-align: center;
@@ -456,7 +456,7 @@
   width: 100%;
   max-height: 60vh;
   border-radius: 10px;
-  object-fit: contain; /* Garante que o vídeo não distorça */
+  object-fit: contain; 
 }
 
 .close-modal {
@@ -485,6 +485,6 @@
   align-self: center;
   width: 100%;
   padding: 10px 0;
-  max-width: 90%; /* Para evitar que o texto fique muito largo */
+  max-width: 90%; 
 }
 
