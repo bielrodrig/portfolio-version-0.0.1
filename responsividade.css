@@ -1,5 +1,7 @@
 @media (max-width: 480px) {
-
+  .noScroll{
+    overflow-x: hidden;
+  }
   .introduction {
     height: 60vh;
     display: flex;
