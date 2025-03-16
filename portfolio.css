@@ -308,7 +308,9 @@
   border-radius: 2px;
 }
 .btn-project {
+  pointer-events: auto !important;
   position: absolute;
+  z-index: 1000;
   left: 50%;
   transform: translate(-50%, -150%);
   border: none;
@@ -418,6 +420,7 @@
   justify-content: center; 
   z-index: 1000;
   opacity: 0;
+  visibility: hidden; 
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;
 }
@@ -444,6 +447,7 @@
 
 .modal-overlay.show {
   opacity: 1;
+  visibility: visible;
   pointer-events: all;
 }
 

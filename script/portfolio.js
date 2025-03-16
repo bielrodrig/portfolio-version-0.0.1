@@ -13,7 +13,7 @@ function typeWriter(elemento) {
   });
 }
 
-//Gera divs ao clicar o botao
+
 document.addEventListener("DOMContentLoaded", () => {
   const btnVerMais = document.querySelector(".btn-project");
   const containerProjetos = document.querySelector(".project-card");

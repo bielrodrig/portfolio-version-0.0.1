@@ -12,6 +12,21 @@ document.addEventListener("DOMContentLoaded", function () {
   document.body.appendChild(modalOverlay);
   modalOverlay.appendChild(modal);
 
+  modal.innerHTML = `
+    <div class="modal-content">
+      <video controls autoplay class="modal-video">
+        <source src="" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+      <div class="modal-description"></div>
+      <button class="close-modal">Fechar</button>
+    </div>
+  `;
+
+  const modalVideo = modal.querySelector(".modal-video");
+  const modalDescription = modal.querySelector(".modal-description");
+  const closeModalBtn = modal.querySelector(".close-modal");
+
   projectCards.forEach((card) => {
     card.addEventListener("click", function () {
       const videoSrc = card.getAttribute("data-video") || "";
@@ -19,41 +34,23 @@ document.addEventListener("DOMContentLoaded", function () {
         card.querySelector(".card-text-project")?.innerHTML ||
         "Sem descrição disponível";
 
-      modal.innerHTML = `
-        <div class="modal-content">
-          <video controls autoplay class="modal-video">
-            <source src="${videoSrc}" type="video/mp4">
-            Seu navegador não suporta o elemento de vídeo.
-          </video>
-          <div class="modal-description">${projectText}</div>
-          <button class="close-modal">Fechar</button>
-        </div>
-      `;
+      modalVideo.querySelector("source").src = videoSrc;
+      modalVideo.load();
+      modalDescription.innerHTML = projectText;
 
-      const video = modal.querySelector(".modal-video");
-
-      // Mostrar o modal
       modalOverlay.classList.add("show");
-
-      // Fechar o modal ao clicar no botão
-      modal.querySelector(".close-modal").addEventListener("click", function () {
-        // Pausar o vídeo
-        if (video) {
-          video.pause();
-        }
-        modalOverlay.classList.remove("show");
-      });
-
-      // Fechar o modal ao clicar fora dele
-      modalOverlay.addEventListener("click", function (e) {
-        if (e.target === modalOverlay) {
-          // Pausar o vídeo
-          if (video) {
-            video.pause();
-          }
-          modalOverlay.classList.remove("show");
-        }
-      });
     });
+  });
+
+  closeModalBtn.addEventListener("click", function () {
+    modalOverlay.classList.remove("show");
+    modalVideo.pause();
+  });
+
+  modalOverlay.addEventListener("click", function (e) {
+    if (e.target === modalOverlay) {
+      modalOverlay.classList.remove("show");
+      modalVideo.pause();
+    }
   });
 });
