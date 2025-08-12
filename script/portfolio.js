@@ -14,86 +14,86 @@ function typeWriter(elemento) {
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const btnVerMais = document.querySelector(".btn-project");
-  const containerProjetos = document.querySelector(".project-card");
+// document.addEventListener("DOMContentLoaded", () => {
+//   const btnVerMais = document.querySelector(".btn-project");
+//   const containerProjetos = document.querySelector(".project-card");
 
-  let projetosAdicionados = 3;
-  const limiteProjetos = 5;
+//   let projetosAdicionados = 3;
+//   const limiteProjetos = 5;
 
-  let alternadorDeDiv = 2;
+//   let alternadorDeDiv = 2;
 
-  btnVerMais.addEventListener("click", () => {
-    if (projetosAdicionados < limiteProjetos) {
-      const novoProjeto = document.createElement("div");
+//   btnVerMais.addEventListener("click", () => {
+//     if (projetosAdicionados < limiteProjetos) {
+//       const novoProjeto = document.createElement("div");
 
-      if (window.innerWidth > 768) {
-        if (alternadorDeDiv === 2) {
-          novoProjeto.classList.add("card-two-project");
-          novoProjeto.innerHTML = `
-            <div class="card-text-project">
-                <label class="card-title-project">
-                    <label style="color: white;">Sobre o Projeto:</label> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </label>
-                <br><br><br>
-                <hr class="row-project">
-                <br><br>
-                <label class="card-title-project">
-                    <label style="color: white;">Técnologias:</label> MySQL, HTML, CSS, PHP
-                </label>
-            </div>
-            <img src="./images/convencionais/fotoTeste.png" class="img-project">
-          `;
-        } else {
-          novoProjeto.classList.add("card-one-project");
-          novoProjeto.innerHTML = `
-            <img src="./images/convencionais/fotoTeste.png" class="img-project">
-            <div class="card-text-project">
-                <label class="card-title-project">
-                    <label style="color: white;">Sobre o Projeto:</label> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </label>
-                <br><br><br>
-                <hr class="row-project">
-                <br><br>
-                <label class="card-title-project">
-                    <label style="color: white;">Técnologias:</label> MySQL, HTML, CSS, PHP
-                </label>
-            </div>
-          `;
-        }
-        alternadorDeDiv = alternadorDeDiv === 2 ? 1 : 2;
-      } else {
-        novoProjeto.classList.add("card-one-project");
-        novoProjeto.innerHTML = `
-          <img src="./images/convencionais/fotoTeste.png" class="img-project">
-          <div class="card-text-project">
-              <label class="card-title-project">
-                  <label style="color: white;">Sobre o Projeto:</label> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </label>
-              <br><br><br>
-              <hr class="row-project">
-              <br><br>
-              <label class="card-title-project">
-                  <label style="color: white;">Técnologias:</label> MySQL, HTML, CSS, PHP
-              </label>
-          </div>
-        `;
-      }
+//       if (window.innerWidth > 768) {
+//         if (alternadorDeDiv === 2) {
+//           novoProjeto.classList.add("card-two-project");
+//           novoProjeto.innerHTML = `
+//             <div class="card-text-project">
+//                 <label class="card-title-project">
+//                     <label style="color: white;">Sobre o Projeto:</label> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+//                 </label>
+//                 <br><br><br>
+//                 <hr class="row-project">
+//                 <br><br>
+//                 <label class="card-title-project">
+//                     <label style="color: white;">Técnologias:</label> MySQL, HTML, CSS, PHP
+//                 </label>
+//             </div>
+//             <img src="./images/convencionais/fotoTeste.png" class="img-project">
+//           `;
+//         } else {
+//           novoProjeto.classList.add("card-one-project");
+//           novoProjeto.innerHTML = `
+//             <img src="./images/convencionais/fotoTeste.png" class="img-project">
+//             <div class="card-text-project">
+//                 <label class="card-title-project">
+//                     <label style="color: white;">Sobre o Projeto:</label> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+//                 </label>
+//                 <br><br><br>
+//                 <hr class="row-project">
+//                 <br><br>
+//                 <label class="card-title-project">
+//                     <label style="color: white;">Técnologias:</label> MySQL, HTML, CSS, PHP
+//                 </label>
+//             </div>
+//           `;
+//         }
+//         alternadorDeDiv = alternadorDeDiv === 2 ? 1 : 2;
+//       } else {
+//         novoProjeto.classList.add("card-one-project");
+//         novoProjeto.innerHTML = `
+//           <img src="./images/convencionais/fotoTeste.png" class="img-project">
+//           <div class="card-text-project">
+//               <label class="card-title-project">
+//                   <label style="color: white;">Sobre o Projeto:</label> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+//               </label>
+//               <br><br><br>
+//               <hr class="row-project">
+//               <br><br>
+//               <label class="card-title-project">
+//                   <label style="color: white;">Técnologias:</label> MySQL, HTML, CSS, PHP
+//               </label>
+//           </div>
+//         `;
+//       }
 
-      containerProjetos.appendChild(novoProjeto);
+//       containerProjetos.appendChild(novoProjeto);
 
-      projetosAdicionados++;
+//       projetosAdicionados++;
 
-      novoProjeto.style.marginTop = "25px";
-    }
+//       novoProjeto.style.marginTop = "25px";
+//     }
 
-    if (projetosAdicionados >= limiteProjetos) {
-      btnVerMais.disabled = true;
-      btnVerMais.textContent = "Limite de projetos atingido";
-      btnVerMais.style.fontSize = "13px";
-    }
-  });
-});
+//     if (projetosAdicionados >= limiteProjetos) {
+//       btnVerMais.disabled = true;
+//       btnVerMais.textContent = "Limite de projetos atingido";
+//       btnVerMais.style.fontSize = "13px";
+//     }
+//   });
+// });
 
 //Ajuste de zoom
 function ajustarZoom() {
